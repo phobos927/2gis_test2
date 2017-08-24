@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2gis_test2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="2gis_test" Height="392.093" Width="525" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
+
         
+            <TextBox x:Name="textBox_id"  HorizontalAlignment="Left" Height="27" Margin="167,189,0,0" TextWrapping="Wrap" Text="1"  VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="textBox_name" HorizontalAlignment="Left" Height="30" Margin="167,230,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="textBox_val" HorizontalAlignment="Left" Height="23" Margin="41,275,0,0" TextWrapping="Wrap" Text="value" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button_add" Content="Добавить" HorizontalAlignment="Left" Height="27" Margin="41,310,0,0" VerticalAlignment="Top" Width="120" Click="button_add_Click"/>
+        <Button x:Name="button_remove" Content="Удалить" HorizontalAlignment="Left" Height="27" Margin="198,310,0,0" VerticalAlignment="Top" Width="123" Click="button_remove_Click"/>
+        <Button x:Name="button_get" Content="Вывести" HorizontalAlignment="Left" Margin="360,310,0,0" VerticalAlignment="Top" Width="110" Height="27" Click="button_get_Click"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="173" Margin="114,10,0,0" VerticalAlignment="Top" Width="270">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
     </Grid>
 </Window>
